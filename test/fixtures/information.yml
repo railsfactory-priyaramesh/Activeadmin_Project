@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  First_Name: MyString
+  Last_Name: MyString
+  Title: MyString
+  Company: MyString
+  Desk_Phone_No: 1
+  Mobile_or_Direct_No: 1
+  Position: MyString
+  URL: MyString
+  Time_Zone: MyString
+  State: MyString
+  Email: MyString
+  Industry: MyString
+  Products: MyString
+  Job_URL: MyString
+  Linkedin_URL: MyString
+  Employee_Size: MyString
+  Revenue: MyString
+  Disposition: MyString
+  Job_Portal: MyString
+  Mailing_from: MyString
+  firstRun: MyString
+  secondRun: MyString
+  thirdRun: MyString
+
+two:
+  Name: MyString
+  First_Name: MyString
+  Last_Name: MyString
+  Title: MyString
+  Company: MyString
+  Desk_Phone_No: 1
+  Mobile_or_Direct_No: 1
+  Position: MyString
+  URL: MyString
+  Time_Zone: MyString
+  State: MyString
+  Email: MyString
+  Industry: MyString
+  Products: MyString
+  Job_URL: MyString
+  Linkedin_URL: MyString
+  Employee_Size: MyString
+  Revenue: MyString
+  Disposition: MyString
+  Job_Portal: MyString
+  Mailing_from: MyString
+  firstRun: MyString
+  secondRun: MyString
+  thirdRun: MyString

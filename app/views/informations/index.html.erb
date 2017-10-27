@@ -1,0 +1,68 @@
+<%=flash[:notice]%>
+<table>
+	<thead>
+		<tr>
+		<th>Name</th>
+		<th>First_Name</th>
+		<th>Last_Name</th>
+        <th>Title</th>
+        <th>Company</th>
+        <th>Desk_Phone_No</th>
+        <th>Mobile_or_Direct_No</th>
+        <th>Position</th>
+        <th>URL</th>
+        <th>Time_Zone</th>
+        <th>State</th>
+        <th>Email</th>
+        <th>Industry</th>
+        <th>Products</th>
+        <th>Job_URL</th>
+        <th>Linkedin_URL</th>
+        <th>Employee_Size</th>
+        <th>Revenue</th>
+        <th>Disposition</th>
+        <th>Job_portal</th>
+        <th>Mailing_from</th>
+        <th>firstRun</th>
+        <th>secondRun</th>
+        <th>thirdRun</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @informations.each do |info| %>
+		<tr>
+			<td><%=info.Name%></td>
+			<td><%=info.First_Name%></td>
+			<td><%=info.Last_Name%></td>
+			<td><%=info.Title%></td>
+			<td><%=info.Company%></td>
+			<td><%=info.Desk_Phone_No%></td>
+			<td><%=info.Mobile_or_Direct_No%></td>
+			<td><%=info.Position%></td>
+			<td><%=info.URL%></td>
+			<td><%=info.Time_Zone%></td>
+			<td><%=info.State%></td>
+			<td><%=info.Email%></td>
+			<td><%=info.Industry%></td>
+			<td><%=info.Products%></td>
+			<td><%=info.Job_URL%></td>
+			<td><%=info.Linkedin_URL%></td>
+			<td><%=info.Employee_Size%></td>
+			<td><%=info.Revenue%></td>
+			<td><%=info.Disposition%></td>
+			<td><%=info.Job_Portal%></td>
+			<td><%=info.Mailing_from%></td>
+			<td><%=info.firstRun%></td>
+			<td><%=info.secondRun%></td>
+			<td><%=info.thirdRun%></td>
+		</tr>
+	    <%end%>	
+	</tbody>
+</table>
+<div>
+	<h4>Import the data</h4>
+	    <%= form_tag import_informations_path, multipart: true do%>
+	    <%= file_field_tag :file%>
+	    <%= submit_tag "submit csv file"%>
+        <%end%>
+</div>
